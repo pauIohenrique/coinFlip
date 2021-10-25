@@ -1,0 +1,25 @@
+body{
+  background-color: gray;
+}
+
+#playbutton{
+    padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #bd0606;
+  border: none;
+  border-radius: 35px;
+  box-shadow: 0 9px #999;
+}
+
+#playbutton:hover {background-color: #bd0606}
+
+#playbutton:active {
+    background-color: #bd0606;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+
