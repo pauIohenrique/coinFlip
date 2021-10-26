@@ -23,19 +23,19 @@ else if (0.5 <= Math.random() && Coroa ===true){
 
 function playCara() {
     if (0.5 >= Math.random()){
-        alert("Deu cara! Você venceu! :D")
+        document.getElementById("result").innerHTML = "Deu cara! Você venceu! :D"
 }
         else {
-            alert("Deu coroa. Você perdeu D;")
+            document.getElementById("result").innerHTML = "Deu coroa. Você perdeu D;"
 }
 }
 
 
 function playCoroa() {
     if (0.5 <= Math.random()){
-        alert("Deu coroa! Você venceu! :D")
+        document.getElementById("result").innerHTML = "Deu coroa! Você venceu! :D"
 }
         else {
-            alert("Deu cara. Você perdeu D;")
+            document.getElementById("result").innerHTML = "Deu cara. Você perdeu D;"
 }
 }

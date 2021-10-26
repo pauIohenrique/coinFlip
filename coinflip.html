@@ -10,12 +10,14 @@
 <body>
     <h1>Cara ou Coroa</h1>
         <h2>Escolha seu lado e pressione o botão para jogar!</h2>
-    
-    <button class="moeda" onclick="selectCara()">Cara</button>
-    <button class="moeda" onclick="selectCoroa()">Coroa</button>
+<div id="btn">
+    <button class="selectbtn" onclick="selectCara()">Cara</button>
     <button id="playbutton" onclick="selectPlay()">Jogar!</button>
-
-
+    <button class="selectbtn" onclick="selectCoroa()">Coroa</button>
+</div>
+    <p id="result">
+        Seu resultado aqui
+    </p>
 
 <script src="coinflip.js"></script>
 </body>
