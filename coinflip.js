@@ -1,41 +1,18 @@
-var Cara
-var Coroa
+var Escolha = ''
 
 function selectCara() {
-    Cara = true
-    Coroa = false
+    Escolha = 'Cara'
 }
 
 function selectCoroa() {
-    Coroa = true
-    Cara = false
+    Escolha = 'Coroa'
 }
 
-function selectPlay(){
-if (0.5 >= Math.random() && Cara === true){
-    playCara()
-}
-
-else if (0.5 <= Math.random() && Coroa ===true){
-    playCoroa()
-}
-}
-
-function playCara() {
-    if (0.5 >= Math.random()){
-        document.getElementById("result").innerHTML = "Deu cara! Você venceu! :D"
-}
-        else {
-            document.getElementById("result").innerHTML = "Deu coroa. Você perdeu D;"
-}
-}
-
-
-function playCoroa() {
-    if (0.5 <= Math.random()){
-        document.getElementById("result").innerHTML = "Deu coroa! Você venceu! :D"
-}
-        else {
-            document.getElementById("result").innerHTML = "Deu cara. Você perdeu D;"
-}
+function play() {
+    if (0.5 >= Math.random() && Escolha === '' ){document.getElementById('result').innerHTML = "Deu cara!"}
+    else if (0.5 <= Math.random() && Escolha === ''){document.getElementById('result').innerHTML = "Deu coroa!"}
+    else if (0.5 >= Math.random() && Escolha === 'Cara' ){document.getElementById('result').innerHTML = "Deu cara! Você venceu! :D"}
+    else if (0.5 <= Math.random() && Escolha === 'Cara' ){document.getElementById('result').innerHTML = "Deu coroa. Você perdeu D;"}
+    else if (0.5 <= Math.random() && Escolha === 'Coroa' ){document.getElementById('result').innerHTML = "Deu coroa! Você venceu! :D"}
+    else if (0.5 >= Math.random() && Escolha === 'Coroa' ){document.getElementById('result').innerHTML = "Deu cara. Você perdeu D;"}
 }

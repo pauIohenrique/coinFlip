@@ -55,6 +55,7 @@ h2{
 	box-shadow: 0 5px #666;
 	transform: translateY(4px);
 }
-.result{
+#result{
   font-family: Verdana, Geneva, Tahoma, sans-serif  ;
+  font-size: 3rem;
 }
